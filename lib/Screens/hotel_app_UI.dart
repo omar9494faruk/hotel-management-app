@@ -161,9 +161,10 @@ class HotelAppUi extends StatelessWidget {
               child: PageView.builder(
                 itemCount: 5,
                 controller: PageController(viewportFraction: 0.6),
+                padEnds: false,
                 itemBuilder: (context, index) {
                   return Card(
-                    color: Color(0xFFF5FAFE),
+                    color: Colors.white,
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 15,
@@ -255,10 +256,13 @@ class HotelAppUi extends StatelessWidget {
                                     color: Color(0xFF007EF2),
                                   ),
                                 ),
-                                TextSpan(text: "/night", style: GoogleFonts.roboto(
-                                  fontSize: 14,
-                                  color: Colors.black87
-                                ))
+                                TextSpan(
+                                  text: "/night",
+                                  style: GoogleFonts.roboto(
+                                    fontSize: 14,
+                                    color: Colors.black87,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -284,9 +288,10 @@ class HotelAppUi extends StatelessWidget {
               child: PageView.builder(
                 itemCount: 5,
                 controller: PageController(viewportFraction: 0.6),
+                padEnds: false,
                 itemBuilder: (context, index) {
                   return Card(
-                    color: Color(0xFFF5FAFE),
+                    color: Colors.white,
                     child: Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 15,
