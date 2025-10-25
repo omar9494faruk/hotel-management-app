@@ -208,10 +208,6 @@ class HotelAppUi extends StatelessWidget {
                                     padding: const EdgeInsets.all(8.0),
                                     child: RichText(
                                       text: TextSpan(
-                                        // "4.5",
-                                        // style: GoogleFonts.openSans(
-                                        //   color: Color(0xFF007EF2),
-                                        //   fontSize: 12,
                                         children: [
                                           WidgetSpan(
                                             child: Icon(
