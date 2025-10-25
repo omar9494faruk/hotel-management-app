@@ -131,7 +131,7 @@ class HotelAppUi extends StatelessWidget {
                   flex: 17,
                   child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.display_settings),
+                    icon: Icon(Icons.display_settings_outlined),
                     style: IconButton.styleFrom(
                       backgroundColor: Color(0xFF007EF2),
                       foregroundColor: Colors.white,
@@ -206,13 +206,40 @@ class HotelAppUi extends StatelessWidget {
                                   color: Color(0xFF007EF2).withOpacity(0.12),
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
-                                    child: Text(
-                                      "4.5",
-                                      style: GoogleFonts.openSans(
-                                        color: Color(0xFF007EF2),
-                                        fontSize: 12,
+                                    child: RichText(
+                                      text: TextSpan(
+                                        // "4.5",
+                                        // style: GoogleFonts.openSans(
+                                        //   color: Color(0xFF007EF2),
+                                        //   fontSize: 12,
+                                        children: [
+                                          WidgetSpan(
+                                            child: Icon(
+                                              Icons.star,
+                                              color: Color(0xFFFFD700),
+                                              size: 15,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: "4.5",
+                                            style: GoogleFonts.openSans(
+                                              color: Color(0xFF007EF2),
+                                              fontSize: 12,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
+                                  ),
+                                ),
+                              ),
+                              Spacer(),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Container(
+                                  child: Icon(
+                                    CupertinoIcons.heart,
+                                    color: Color(0xFF007EF2),
                                   ),
                                 ),
                               ),
